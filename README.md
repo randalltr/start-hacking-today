@@ -57,7 +57,7 @@ This book teaches exactly that.
 If you want to begin immediately, follow these steps.
 
 ### 1. Open Kali Linux
-Boot your Kali VM or machine. If Kali is already running, you are ready, if not go to Chapter 2.
+Boot your Kali VM or machine. If Kali is already running, you are ready, if not go to [Chapter 2 - Ultra Fast Setup](02-setup.md).
 
 ### 2. Learn the Only Nmap Command You Need First
 
@@ -176,6 +176,6 @@ All material in this repository is for educational and ethical security research
 
 ## Start Today
 
-If you already have Kali installed, you are ready.
+If you already have Kali installed, you are ready. If not, go to [Chapter 2 - Ultra Fast Setup](02-setup.md).
 
 Consider starring the repo so other beginners can find it too.
