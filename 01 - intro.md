@@ -1,3 +1,5 @@
+# Introduction
+
 I was once where you are now. 
 
 I wanted to hack but I did not know how. Ever since watching the movie *Hackers* at 12-years-old I knew this was my calling, but I believed hacking required something I did not possess. I thought real hackers were different from me. I assumed they were naturally gifted, technical from birth, or somehow wired differently.
