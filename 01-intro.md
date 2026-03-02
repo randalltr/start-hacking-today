@@ -46,3 +46,7 @@ You do not need to master Linux first. You do not need to memorize networking te
 You will get stuck. Everyone does. When that happens, use AI. Use YouTube. Search constantly. Real hackers look things up every day. There is no prize for memorizing commands. The skill is knowing how to learn and how to keep moving.
 
 This book is an invitation to start today. You are ready. Join me.
+
+Check your configuration: [02 - Ultra Fast Setup](02-setup.md)
+
+Or Learn The Only 2 Nmap Commands You Need: [03 - Nmap](03-nmap.md)

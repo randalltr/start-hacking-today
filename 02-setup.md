@@ -49,8 +49,11 @@ After logging into Kali, open a terminal and run:
 
 ```
 cd /opt
+
 git clone https://github.com/Dewalt-arch/pimpmykali
+
 cd pimpmykali
+
 ./pimpmykali.sh
 ```
 
@@ -130,3 +133,5 @@ After configuration, enable FoxyProxy and browse to any website. Requests should
 **Remember that YouTube and AI are you best friends and will make your hacking journey infinitely easier!**
 
 Once traffic flows through Burp, your environment is fully prepared for the workflow used throughout this book.
+
+Let's Learn The Only 2 Nmap Commands You Need: [03 - Nmap](03-nmap.md)

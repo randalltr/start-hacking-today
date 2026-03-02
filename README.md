@@ -179,3 +179,5 @@ All material in this repository is for educational and ethical security research
 If you already have Kali installed, you are ready. If not, go to [Chapter 2 - Ultra Fast Setup](02-setup.md).
 
 Consider starring the repo so other beginners can find it too.
+
+Lets get started: [01 - Introduction](01-intro.md)
