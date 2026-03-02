@@ -47,6 +47,6 @@ You will get stuck. Everyone does. When that happens, use AI. Use YouTube. Searc
 
 This book is an invitation to start today. You are ready. Join me.
 
-Check your configuration: [02 - Ultra Fast Setup](02-setup.md)
+Check your configuration: [Chapter 2 - Ultra Fast Setup](02-setup.md)
 
-Or Learn The Only 2 Nmap Commands You Need: [03 - Nmap](03-nmap.md)
+Or Learn The Only 2 Nmap Commands You Need: [Chapter 3 - Nmap](03-nmap.md)

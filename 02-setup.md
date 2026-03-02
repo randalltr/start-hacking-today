@@ -134,4 +134,4 @@ After configuration, enable FoxyProxy and browse to any website. Requests should
 
 Once traffic flows through Burp, your environment is fully prepared for the workflow used throughout this book.
 
-Let's Learn The Only 2 Nmap Commands You Need: [03 - Nmap](03-nmap.md)
+Let's Learn The Only 2 Nmap Commands You Need: [Chapter 3 - Nmap](03-nmap.md)

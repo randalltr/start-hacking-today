@@ -121,14 +121,14 @@ If Kali boots, you are ready.
 
 ## Book Structure
 
-1. **Introduction** — how I got started and why simplicity matters
-2. **Ultra Fast Setup** — get operational quickly
+1. [**Introduction**](01-intro.md) — how I got started and why simplicity matters
+2. [**Ultra Fast Setup**](02-setup.md) — get operational quickly
 3. **Nmap** — seeing the target clearly
 4. **ExploitDB** — turning vulnerabilities into access
 5. **Burp Suite** — understanding web communication
 6. **Hack The Box Practice Path** — real machines using only these tools
 7. **Next Steps** — where to go after your first successes
-
+8. **Bonus** - learn tmux
 ---
 
 ## AI Ghostwriting Disclosure
@@ -180,4 +180,4 @@ If you already have Kali installed, you are ready. If not, go to [Chapter 2 - Ul
 
 Consider starring the repo so other beginners can find it too.
 
-Lets get started: [01 - Introduction](01-intro.md)
+Lets get started: [Chapter 1 - Introduction](01-intro.md)
