@@ -3,6 +3,7 @@
 A minimalist beginner guide to ethical hacking using only three tools that actually matter.
 
 **Nmap • ExploitDB • Burp Suite**
+
 (+ one bonus tool for the hardcore)
 
 ## The Hacking Workflow (What You Will Learn)
@@ -40,10 +41,10 @@ Instead of learning hundreds of tools, you will learn one workflow that works on
 ### What This Means
 
 If you can:
-- scan a target,
-- identify a vulnerability,
-- interact with the application,
-- and apply a public exploit,
+- scan a target
+- identify a vulnerability
+- interact with the application
+- and apply a public exploit
 
 you can already hack real systems.
 
