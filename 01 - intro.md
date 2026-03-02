@@ -1,4 +1,4 @@
-I was once where you are now. I wanted to hack but I did not know how. Ever since watching the movie Hackers at 12-years-old I knew this was my calling, but I believed hacking required something I did not possess. I thought real hackers were different from me. I assumed they were naturally gifted, technical from birth, or somehow wired differently.
+I was once where you are now. I wanted to hack but I did not know how. Ever since watching the movie *Hackers* at 12-years-old I knew this was my calling, but I believed hacking required something I did not possess. I thought real hackers were different from me. I assumed they were naturally gifted, technical from birth, or somehow wired differently.
 
 Decades passed and that belief stayed with me.
 
@@ -31,9 +31,9 @@ Resolve will take you further than talent, background, or natural ability. If yo
 
 We are going to ignore most tools. We are going to ignore complicated theory. We are going to focus on a small set of skills that produce real results. You will learn three tools that form the foundation of practical hacking:
 
-- **Nmap** to see the target's attack surface
-- **ExploitDB** to gain access or escalate privileges
-- **Burp Suite** to become the man-in-the-middle of web communications
+- **Nmap** - to see the target's attack surface
+- **ExploitDB** - to gain access or escalate privileges
+- **Burp Suite** - to become the man-in-the-middle of web communications
 
 That is enough to begin.
 
