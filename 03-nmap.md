@@ -32,6 +32,24 @@ This scan takes longer but reveals the full picture. The `-p-` option scans ever
 
 These two commands form the foundation of reconnaissance. Many machines can be solved using exactly this approach.
 
+## A Quick Word Before You Start Scanning
+
+Before you begin running Nmap scans, take a moment to understand something important. Scanning systems that you do not own or have permission to test can violate laws or acceptable use policies. Even a simple port scan can be interpreted as reconnaissance activity.
+
+Responsible hackers only test systems where permission is clear.
+
+For practice during this chapter, you can safely scan the public testing server provided by the Nmap project:
+
+```
+nmap scanme.nmap.org
+```
+
+This server exists specifically so people can learn how Nmap works.
+
+Later in this book, we will use intentionally vulnerable machines on platforms such as Hack The Box. Those environments are designed for learning and provide legal targets for practice.
+
+Stay curious, stay responsible, and always hack with permission.
+
 ## Build the Habit of Taking Notes
 
 Once the scan completes, slow down and review the output carefully. Each service represents an opportunity. A good habit is to record every open port and service in your notes.
