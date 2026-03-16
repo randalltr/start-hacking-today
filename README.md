@@ -125,8 +125,8 @@ If Kali boots, you are ready.
 2. [**Ultra Fast Setup**](02-setup.md) — get operational quickly
 3. [**Nmap**](03-nmap.md) — seeing the target clearly
 4. [**ExploitDB**](04-exploitdb.md) — turning vulnerabilities into access
-5. **Burp Suite** — understanding web communication
-6. **Hack The Box Practice Path** — real machines using only these tools
+5. [**Burp Suite**](05-burpsuite.md) — understanding web communication
+6. [**Hack The Box Practice Path**](06-hackthebox.md) — real machines using only these tools
 7. **Next Steps** — where to go after your first successes
 8. **Bonus** - learn tmux
 ---
