@@ -147,10 +147,9 @@ The goal is simple: share practical knowledge as efficiently as possible.
 
 randalltr
 
-- Penetration tester in training
-- OSCP candidate
 - AIRTP+ certified (AI Red Team Professional)
 - Master in Cybersecurity
+- OSCP candidate
 
 GitHub: https://github.com/randalltr
 
