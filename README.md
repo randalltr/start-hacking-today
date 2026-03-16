@@ -1,5 +1,7 @@
 # Start Hacking Today: The Only 3 Tools You Need
 
+Beginner ethical hacking | Nmap tutorial | ExploitDB tutorial | Burp Suite basics | Hack The Box practice path
+
 A minimalist beginner guide to ethical hacking using only three tools that actually matter.
 
 **Nmap • ExploitDB • Burp Suite**
