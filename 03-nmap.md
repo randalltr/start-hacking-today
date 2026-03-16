@@ -155,3 +155,5 @@ For now, the two commands in this chapter will carry you through the majority of
 Clarity grows through repetition. Each new scan improves your ability to recognize patterns and identify promising targets.
 
 The next chapter builds on this discovery process. After identifying services, the next step is learning how to locate real exploits that turn information into access.
+
+Let's Find Some Exploits: [Chapter 4 - ExploitDB](04-exploitdb.md)
