@@ -61,7 +61,7 @@ Boot your Kali VM or machine. If Kali is already running, you are ready, if not 
 
 ### 2. Learn the Only Nmap Command You Need First
 
-Go to the [Nmap chapter](03-nmap.md) and run your first scan:
+Go to [Chapter 3 - Nmap](03-nmap.md) and run your first scan:
 
 ```
 nmap scanme.nmap.org
@@ -123,8 +123,8 @@ If Kali boots, you are ready.
 
 1. [**Introduction**](01-intro.md) — how I got started and why simplicity matters
 2. [**Ultra Fast Setup**](02-setup.md) — get operational quickly
-3. **Nmap** — seeing the target clearly
-4. **ExploitDB** — turning vulnerabilities into access
+3. [**Nmap**](03-nmap.md) — seeing the target clearly
+4. [**ExploitDB**](04-exploitdb.md) — turning vulnerabilities into access
 5. **Burp Suite** — understanding web communication
 6. **Hack The Box Practice Path** — real machines using only these tools
 7. **Next Steps** — where to go after your first successes
