@@ -23,7 +23,7 @@ htb <box_name> walkthrough
 
 There is no shame in reading walkthroughs during the learning process. The goal is understanding the workflow.
 
-Machine 1: Nibbles (Linux)
+Machine 1: Nibbles (Linux) - [IppSec Video Walkthrough](https://youtu.be/s_0GcRGv6Ds)
 
 Nibbles is an excellent beginner machine. It demonstrates how a vulnerable web application can lead to initial access and eventually root privileges.
 
@@ -100,7 +100,7 @@ Lesson
 
 Web applications frequently contain vulnerabilities that lead to system access. Careful investigation combined with vulnerability research often reveals the path forward.
 
-Machine 2: Jerry (Windows)
+Machine 2: Jerry (Windows) - [IppSec Video Walkthrough](https://youtu.be/PJeBIey8gc4)
 
 Jerry is a simple Windows machine that demonstrates how weak configuration can lead to compromise.
 
@@ -159,7 +159,7 @@ Many compromises occur because of configuration weaknesses rather than software 
 
 Default credentials and exposed administrative panels are common attack paths.
 
-Machine 3: Bashed (Linux)
+Machine 3: Bashed (Linux) - [IppSec Video Walkthrough](https://youtu.be/2DqdPcbYcy8)
 
 Bashed demonstrates how discovering a web shell can lead to full system compromise.
 
