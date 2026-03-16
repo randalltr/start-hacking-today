@@ -61,7 +61,7 @@ Boot your Kali VM or machine. If Kali is already running, you are ready, if not 
 
 ### 2. Learn the Only Nmap Command You Need First
 
-Go to the Nmap chapter and run your first scan:
+Go to the [Nmap chapter](03-nmap.md) and run your first scan:
 
 ```
 nmap scanme.nmap.org
