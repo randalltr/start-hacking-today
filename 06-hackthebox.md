@@ -21,7 +21,7 @@ When you get stuck, search Google for:
 htb <box-name> walkthrough
 ```
 
-There is no shame in reading walkthroughs during the learning process. The goal is understanding the workflow.
+There is no shame in reading walkthroughs during the learning process. The goal is understanding the workflow. I've included a written and video walkthrough with each of the machines we will be hacking.
 
 ## Machine 1: Nibbles (Linux)
 
