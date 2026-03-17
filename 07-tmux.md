@@ -42,7 +42,7 @@ This creates a new session.
 Detach from tmux
 
 ```
-Ctrl + B, then D
+Ctrl + b, then d
 ```
 
 This leaves tmux running in the background.
@@ -78,25 +78,25 @@ Think of windows like tabs in a browser.
 Create a new window
 
 ```
-Ctrl + B, then C
+Ctrl + b, then c
 ```
 
 Move to next window
 
 ```
-Ctrl + B, then N
+Ctrl + b, then n
 ```
 
 Move to previous window
 
 ```
-Ctrl + B, then P
+Ctrl + b, then p
 ```
 
 Rename a window
 
 ```
-Ctrl + B, then ,
+Ctrl + b, then ,
 ```
 
 Give it a name like:
@@ -118,19 +118,19 @@ You can split your terminal into multiple views.
 Split horizontally
 
 ```
-Ctrl + B, then "
+Ctrl + b, then "
 ```
 
 Split vertically
 
 ```
-Ctrl + B, then %
+Ctrl + b, then %
 ```
 
 Move between panes
 
 ```
-Ctrl + B, then arrow keys
+Ctrl + b, then arrow keys
 ```
 
 ## Closing Things
@@ -138,7 +138,7 @@ Ctrl + B, then arrow keys
 Close a pane or window
 
 ```
-Ctrl + D
+Ctrl + b, then x
 ```
 
 This closes whatever shell you are in.
@@ -156,13 +156,13 @@ tmux
 2. Create a window for scanning
 
 ```
-Ctrl + B, then C
+Ctrl + b, then c
 ```
 
 Rename it:
 
 ```
-Ctrl + B, then ,
+Ctrl + b, then ,
 ```
 
 Call it `nmap`.
