@@ -70,7 +70,9 @@ nmap scanme.nmap.org
 
 ## Why This Exists
 
-I was once where you are now. I wanted to hack but had no idea where to start. Every guide listed hundreds of tools. Kali Linux felt overwhelming. I remember staring at the menu and asking friends, *“How do we even begin?”*
+I was once where you are now. I wanted to hack but had no idea where to start. Every guide listed hundreds of tools. Kali Linux felt overwhelming. I remember staring at the menu and asking friends, 
+
+*“How do I even begin?”*
 
 This book answers that question.
 
@@ -92,7 +94,7 @@ This book intentionally limits you to three tools:
 
 Plus one bonus tool:
 
-- **tmux** — work efficiently like a real hacker
+- **tmux** — become the hacker from the movies
 
 Constraint creates clarity. Clarity creates progress.
 

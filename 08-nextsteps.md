@@ -54,7 +54,7 @@ If you get stuck, use your resources:
 
 - YouTube (especially IppSec)
 - AI tools
-- Google: `htb <boxname> walkthrough`
+- Google: `htb <box-name> walkthrough`
 
 The goal is not speed. The goal is understanding.
 

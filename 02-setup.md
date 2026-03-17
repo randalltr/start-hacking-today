@@ -45,6 +45,8 @@ Once Kali boots successfully, you are ready to continue.
 
 ## Run Pimp My Kali to Optimize Setup
 
+Pimp My Kali updates packages, installs useful defaults, and prepares the environment for practical work. This step saves hours of manual configuration and helps ensure tools behave consistently.
+
 After logging into Kali, open a terminal and run:
 
 ```
@@ -56,8 +58,6 @@ cd pimpmykali
 
 ./pimpmykali.sh
 ```
-
-Pimp My Kali updates packages, installs useful defaults, and prepares the environment for practical work. This step saves hours of manual configuration and helps ensure tools behave consistently.
 
 **Follow a YouTube walkthrough or ask AI if any error encountered.** 
 
