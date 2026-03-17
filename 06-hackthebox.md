@@ -84,9 +84,7 @@ One of the results will match the version of the application but is using Metasp
 
 ### Step 4: Use the Exploit
 
-We can find a writeup of CVE-2015-6967 by searching Google for our nibbleblog version exploit.
-
-[CVE-2015-6967 NibbleBlog 4.0.3 Code Execution](https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html)
+We can find a writeup of [CVE-2015-6967](https://curesec.com/blog/article/blog/NibbleBlog-403-Code-Execution-47.html) by searching Google for `nibbleblog 4.0.3 exploit`.
 
 Read the exploit and follow the instructions.
 
@@ -113,7 +111,6 @@ Upload that file and when visiting `image.php` you will catch the reverse shell 
 ```
 nc -lnvp 8082
 ```
-
 
 This should give you access to the system.
 
