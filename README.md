@@ -127,8 +127,9 @@ If Kali boots, you are ready.
 4. [**ExploitDB**](04-exploitdb.md) — turning vulnerabilities into access
 5. [**Burp Suite**](05-burpsuite.md) — understanding web communication
 6. [**Hack The Box Practice Path**](06-hackthebox.md) — real machines using only these tools
-7. **Next Steps** — where to go after your first successes
-8. **Bonus** - learn tmux
+7. [**Bonus**](07-tmux.md) - learn tmux
+8. [**Next Steps**](08-nextsteps.md) — where to go after your first successes
+
 ---
 
 ## AI Ghostwriting Disclosure
