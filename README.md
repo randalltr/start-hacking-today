@@ -88,13 +88,13 @@ Most beginners struggle because of tool overload. Professional hackers succeed b
 
 This book intentionally limits you to three tools:
 
-- **Nmap** — discover the attack surface
-- **ExploitDB** — find working exploits
-- **Burp Suite** — understand and manipulate web applications
+- [**Nmap**](./03-nmap.md) — discover the attack surface
+- [**ExploitDB**](./04-exploitdb.md) — find working exploits
+- [**Burp Suite**](./05-burpsuite.md) — understand and manipulate web applications
 
 Plus one bonus tool:
 
-- **tmux** — become the hacker from the movies
+- [**tmux**](./07-tmux.md) — become the hacker from the movies
 
 Constraint creates clarity. Clarity creates progress.
 
